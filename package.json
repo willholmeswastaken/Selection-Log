@@ -3,6 +3,7 @@
 	"displayName": "SelectionLog",
 	"description": "An extension to wrap highlighted code in a console.log() ",
 	"publisher": "WillHolmes",
+	"repository": { "url": "https://github.com/willholmeswastaken/Selection-Log" },
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.40.0"
