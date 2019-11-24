@@ -1,0 +1,40 @@
+{
+	"name": "selectionlog",
+	"displayName": "SelectionLog",
+	"description": "An extension to wrap highlighted code in a console.log() ",
+	"publisher": "WillHolmes",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.wrapConsoleLog"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+            "command": "extension.wrapConsoleLog",
+			"title": "Wrap Console Log"
+		}],
+		"keybindings": {
+			"command": "extension.wrapConsoleLog",
+			"key": "ctrl+alt+c",
+			"mac": "cmd+ctrl+c",
+			"when": "editorTextFocus"
+		  }
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
